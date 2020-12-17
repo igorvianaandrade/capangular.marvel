@@ -27,7 +27,7 @@ export class ExtesionDatePipe implements PipeTransform {
         break;
       }
 
-    //response = 17 de dezembro de
+    //response = 17 de dezembro de 
 
 
     response += value.getFullYear().toString();
