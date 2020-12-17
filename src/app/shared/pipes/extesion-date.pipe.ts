@@ -6,13 +6,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ExtesionDatePipe implements PipeTransform {
 
   transform(value: Date): string {
-    let response:string = "";
+    let response: string = "";
 
     response = value.getDate().toString();
 
     //response = 17
 
-    switch(value.getMonth() + 1){
+    switch (value.getMonth() + 1) {
       case 1:
         response += " de janeiro de ";
         break;
@@ -25,7 +25,7 @@ export class ExtesionDatePipe implements PipeTransform {
       case 12:
         response += " de dezembro de ";
         break;
-      }
+    }
 
     //response = 17 de dezembro de 
 
