@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "pipe"
+  "defaultProject": "pipe",
+  "cli": {
+    "analytics": "a3aa0dea-3c51-4a70-8261-2fd42b37e997"
+  }
 }
