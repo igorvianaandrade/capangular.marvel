@@ -11,7 +11,7 @@ import { ComicsService } from 'src/app/services/comics/comics.service';
 })
 export class ComicsComponent implements OnInit {
 
-  comicList: Comic[] = [];
+  comicList: Comic[] = [];  
 
   constructor(private comicService: ComicsService) { }
 

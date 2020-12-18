@@ -19,6 +19,8 @@ import { CharacterComponent } from './components/characters/character/character.
 import { CharactersComponent } from './components/characters/characters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ComicsComponent } from './components/comics/comics/comics.component';
+import { imagePipe } from './shared/pipes/Image-pipes.pipe';
+import { LocalDateTimePipe } from './shared/pipes/local-date-time.pipe';
 
 
 
@@ -28,7 +30,9 @@ import { ComicsComponent } from './components/comics/comics/comics.component';
     NavbarComponent,
     CharacterComponent,
     CharactersComponent,
-    ComicsComponent
+    ComicsComponent,
+    imagePipe,
+    LocalDateTimePipe
   ],
   imports: [
     BrowserModule,
