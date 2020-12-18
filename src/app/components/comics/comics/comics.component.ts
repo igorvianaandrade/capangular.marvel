@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComicList } from 'src/app/models/comics/comic-list.model';
+import { Comic } from 'src/app/models/comics/comic.model';
 import { ComicsService } from 'src/app/services/comics/comics.service';
 
 
@@ -10,7 +11,7 @@ import { ComicsService } from 'src/app/services/comics/comics.service';
 })
 export class ComicsComponent implements OnInit {
 
-  comicList: ComicList[] = [];
+  comicList: Comic[] = [];
 
   constructor(private comicService: ComicsService) { }
 
@@ -18,8 +19,7 @@ export class ComicsComponent implements OnInit {
    ngOnInit(): void {
     this.comicService.getAllComics()
     .subscribe((response:any) => {
-      this.comicList = response;
-      console.log("OI: "+this.comicList);
+      this.comicList = response;      
     });
   }
 
